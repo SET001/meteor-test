@@ -1,0 +1,66 @@
+/* CSS declarations go here */
+
+body{
+	padding-top: 70px;
+}
+
+form button{
+	width: 100%;
+}
+
+.images-list{
+	max-width: 150px;
+	margin: 20px auto;
+}
+.images-list li:hover a{
+	display: block;
+}
+.images-list a{
+	color: #d9534f;
+	display: none;
+}
+
+slider{
+  position: relative;
+  display: block;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+slider .slide{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+
+slider .slide.active{
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+
+slider .slide .item{
+  text-align: center;
+  float: left;
+  width: 33%;
+}
+slider .slide .item img{
+  width: 200px;
+	height: 200px;
+}
+
+slider button{
+  position: absolute;
+  z-index: 999;
+}
+
+slider button.next{
+  right: 0;
+}
+
+slider button.prev{
+  left: 0;
+}

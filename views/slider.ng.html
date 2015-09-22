@@ -1,0 +1,8 @@
+<div ng-repeat="slide in slides" class="slide col-sm-4" ng-class="{active:activeSlide===$index}">
+	<div class="item" ng-repeat="image in slide">
+	  <img ng-src="/static/uploads/{{image.copies.images.key}}">
+	  <p>{{image.original.name}}</p>
+	</div>
+</div>
+<button ng-click="previous()" class="prev">Prev</button>
+<button ng-click="next()" class="next">Next</button>
